@@ -7,7 +7,7 @@
     <ul class="users">
       <li v-for="(user, index) in users" class="user">
         <nuxt-link :to="{ name: 'id', params: { id: index }}">
-          {{ user.name }}
+          {{ user }}
         </nuxt-link>
       </li>
     </ul>

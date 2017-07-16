@@ -1,16 +1,31 @@
-import { Router } from 'express'
+import {
+  Router
+} from 'express'
+
+var pgp = require('pg-promise')( /*options*/ )
+var db = pgp(process.env.DATABASE_URL)
 
 var router = Router()
 
 // Mock Users
-const users = [
-  { name: 'Alexandre' },
-  { name: 'Sébastien' }
+const users = [{
+    name: 'Alexandre'
+  },
+  {
+    name: 'Sébastien'
+  }
 ]
 
 /* GET users listing. */
 router.get('/users', function (req, res, next) {
-  res.json(users)
+  db.one('SELECT sh from abyat')
+    .then(function (data) {
+      console.log('DATA:', data)
+      res.json(data)
+    })
+    .catch(function (error) {
+      console.log('ERROR:', error)
+    })
 })
 
 /* GET user by ID. */
