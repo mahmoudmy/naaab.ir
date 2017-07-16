@@ -19,7 +19,7 @@ const users = [{
 
 /* GET users listing. */
 router.get('/users', function (req, res, next) {
-  db.one('SELECT sh from abyat')
+  db.many('SELECT sh from abyat')
     .then(function (data) {
       console.log('DATA:', data)
       res.json(data)
