@@ -2,7 +2,7 @@
   <section class="container">
     <p>{{ beyt.m1 }}</p>
     <p>{{ beyt.m2 }}</p>
-    <nuxt-link class="button" :to="{ name: 'poet', params: { poet: beyt.sh }}">
+    <nuxt-link class="button" :to="{ name: 'poet-name', params: { name: beyt.sh }}">
       {{beyt.sh}}
     </nuxt-link>
   </section>
@@ -12,9 +12,9 @@
   import axios from '~plugins/axios'
 
   export default {
-    name: 'beyt',
+    name: 'beyt-id',
     asyncData ({ params, error }) {
-      return axios.get('/api/abyat/' + params.beyt)
+      return axios.get('/api/abyat/' + params.id)
         .then((res) => {
           return {
             beyt: res.data

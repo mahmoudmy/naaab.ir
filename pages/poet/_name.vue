@@ -1,6 +1,6 @@
 <template>
   <section class="container">
-
+    
   </section>
 </template>
 
@@ -8,9 +8,9 @@
 import axios from '~plugins/axios'
 
 export default {
-  name: 'poet',
+  name: 'poet-name',
   asyncData ({ params, error }) {
-    return axios.get('/api/abyat?poet=' + params.poet)
+    return axios.get('/api/abyat?poet=' + params.name)
     .then((res) => {
       return { abyat: res.data }
     })

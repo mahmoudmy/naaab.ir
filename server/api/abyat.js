@@ -20,7 +20,7 @@ router.get('/abyat', function(req, res, next) {
 /* GET user by ID. */
 router.get('/abyat/:beyt', function(req, res, next) {
   var beyt = req.params.beyt
-  db.one('SELECT * from abyat WHERE _id = $1', beyt)
+  db.one('SELECT * from abyat WHERE id = $1', beyt)
     .then(function(data) {
       res.json(data)
     })

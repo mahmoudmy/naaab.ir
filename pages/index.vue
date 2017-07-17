@@ -4,8 +4,8 @@
       <li v-for="(item, index) in abyat" class="beyt">
         <p>{{ item.m1}}</p>
         <p>{{ item.m2}}</p>
-        <nuxt-link :to="{ name: 'beyt', params: { beyt: item._id }}">پیوند</nuxt-link>
-        <nuxt-link :to="{ name: 'poet', params: { poet: item.sh }}">{{ item.sh }}</nuxt-link>
+        <nuxt-link :to="{ name: 'beyt-id', params: { id: item.id }}">پیوند</nuxt-link>
+        <nuxt-link :to="{ name: 'poet-name', params: { name: item.sh }}">{{ item.sh }}</nuxt-link>
       </li>
     </ul>
   </section>
