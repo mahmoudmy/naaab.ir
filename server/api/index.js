@@ -1,10 +1,10 @@
 import { Router } from 'express'
 
-import users from './users'
+import abyat from './abyat'
 
 var router = Router()
 
-// Add USERS Routes
-router.use(users)
+// Add ABYAT Routes
+router.use(abyat)
 
 export default router

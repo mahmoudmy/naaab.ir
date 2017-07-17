@@ -1,14 +1,11 @@
 <template>
   <section class="container">
-    <img src="../assets/img/logo.png" alt="Nuxt.js Logo" class="logo" />
-    <h1 class="title">
-      USERS
-    </h1>
-    <ul class="users">
-      <li v-for="(user, index) in users" class="user">
-        <nuxt-link :to="{ name: 'id', params: { id: index }}">
-          {{ user }}
-        </nuxt-link>
+    <ul class="abyat">
+      <li v-for="(item, index) in abyat" class="beyt">
+        <p>{{ item.m1}}</p>
+        <p>{{ item.m2}}</p>
+        <nuxt-link :to="{ name: 'beyt', params: { beyt: item._id }}">پیوند</nuxt-link>
+        <nuxt-link :to="{ name: 'poet', params: { poet: item.sh }}">{{ item.sh }}</nuxt-link>
       </li>
     </ul>
   </section>
@@ -19,14 +16,14 @@ import axios from '~plugins/axios'
 
 export default {
   async asyncData () {
-    let { data } = await axios.get('/api/users')
+    let { data } = await axios.get('/api/abyat')
     return {
-      users: data
+      abyat: data
     }
   },
   head () {
     return {
-      title: 'Users'
+      title: 'ابیات ناب پارسی'
     }
   }
 }
@@ -37,13 +34,13 @@ export default {
 {
   margin: 30px 0;
 }
-.users
+.abyat
 {
   list-style: none;
   margin: 0;
   padding: 0;
 }
-.user
+.beyt
 {
   margin: 10px 0;
 }
