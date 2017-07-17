@@ -3,11 +3,11 @@ module.exports = {
   ** Headers of the page
   */
   head: {
-    title: 'starter',
+    title: 'ابیات ناب پارسی',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'Nuxt.js project' }
+      { hid: 'description', name: 'description', content: 'تک‌بیت‌های شیرین، ناب و پندآموز پارسی' }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
@@ -16,7 +16,12 @@ module.exports = {
   /*
   ** Global CSS
   */
-  css: ['~assets/css/main.css'],
+  css: [
+    { src: 'bulma/css/bulma.css'},
+    '~assets/css/main.css'
+//     { src: 'bulma/sass/grid/columns.sass', lang: 'sass' },
+//     { src: 'bulma/sass/components/card.sass', lang: 'sass' }
+  ],
   /*
   ** Add axios globally
   */

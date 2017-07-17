@@ -1,14 +1,13 @@
 <template>
   <section class="container">
-    <img src="../assets/img/logo.png" alt="Nuxt.js Logo" class="logo" />
     <h1 class="title">
-      {{ error.statusCode }}
+      خطای {{ error.statusCode }}
     </h1>
-    <h2 class="info">
+<!--     <h2 class="info">
       {{ error.message }}
-    </h2>
+    </h2> -->
     <nuxt-link class="button" to="/" v-if="error.statusCode === 404">
-      Homepage
+      خانه
     </nuxt-link>
   </section>
 </template>

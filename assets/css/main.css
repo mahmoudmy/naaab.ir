@@ -1,11 +1,6 @@
 html, body
 {
-  background-color: #fff;
-  color: #000;
-  letter-spacing: 0.5px;
-  font-family: "Source Sans Pro", Arial, sans-serif;
-  height: 100vh;
-  margin: 0;
+  direction: rtl;
 }
 
 footer
@@ -20,9 +15,79 @@ a, a:hover, a:focus, a:visited
   color: #000;
 }
 
-.logo {
-  width: 100%;
-  height: auto;
-  max-width: 400px;
-  max-height: 289px;
+@font-face {
+  font-family: Vazir;
+  src: url('../fonts/Vazir.eot');
+  src: url('../fonts/Vazir.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/Vazir.woff') format('woff'),
+       url('../fonts/Vazir.ttf') format('truetype');
+  font-weight: normal;
+}
+      
+@font-face {
+  font-family: Vazir;
+  src: url('../fonts/Vazir-Bold.eot');
+  src: url('../fonts/Vazir-Bold.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/Vazir-Bold.woff') format('woff'),
+       url('../fonts/Vazir-Bold.ttf') format('truetype');
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: Vazir;
+  src: url('../fonts/Vazir-Light.eot');
+  src: url('../fonts/Vazir-Light.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/Vazir-Light.woff') format('woff'),
+       url('../fonts/Vazir-Light.ttf') format('truetype');
+  font-weight: 300;
+}
+
+body {
+  font-family: Vazir;
+}
+
+.beyt .card {
+	color: #212529;
+	}
+	
+	.beyt .card-footer-item {
+		color: #868e96;
+		font-weight: 600;
+	}
+	
+	.beyt .card-footer-item:hover {
+		color: #212529;
+	}
+	
+	.beyt .card-content {
+		line-height: 36px;
+	}
+	
+	.mesra {
+		font-size: 16px;
+		text-align: center;
+	}
+	
+	@media only screen and (max-device-width: 768px) {
+		.column.beyt {
+			width: 100%;
+		}
+	}
+	
+	@media only screen and (max-device-width: 568px) {
+		.beyt .card-content {
+			line-height: 42px;
+		}
+		.beyt .mesra {
+			font-size: 24px;
+		}
+	}
+  
+.card-footer-item:not(:last-child) {
+    border-right: none;
+    border-left: 1px solid #dbdbdb;
+}
+
+.section {
+	background-color: #fafafa;
 }
