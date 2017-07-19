@@ -18,7 +18,7 @@
     </div>
     
     <div class="column is-12 has-text-centered">
-      <nuxt-link class="button is-primary is-outlined" :to="{ name: 'page', params: { page: 2 }}">بیشتر</nuxt-link>
+      <nuxt-link class="button" :to="{ name: 'page', params: { page: 2 }}">بیشتر</nuxt-link>
     </div>
   </div>
 

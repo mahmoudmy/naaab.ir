@@ -38,7 +38,12 @@
       return {
         title: this.beyt.sh + ' -  ابیات ناب پارسی',
         meta: [
-          { hid: 'description', name: 'description', content: this.beyt.m1 + ' / ' + this.beyt.m2 }
+          { hid: 'description', name: 'description', content: this.beyt.m1 + ' / ' + this.beyt.m2 },
+          { hid: 'twitter:card', name: 'twitter:card', content: 'summary' },
+          { hid: 'og:title', name: 'og:title', content: this.beyt.sh + ' - ابیات ناب پارسی' },
+          { hid: 'og:type', name: 'og:type', content: 'article' },
+          { hid: 'og:url', name: 'og:url', content: 'http://naaab.ir' },
+          { hid: 'og:description', name: 'og:description', content: this.beyt.m1 + ' / ' + this.beyt.m2 }
         ]
       }
     }
