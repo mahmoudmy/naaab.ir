@@ -1,6 +1,4 @@
-# naaab-nuxt-express
-
-> naaab with nuxt-express
+# SSR using nuxt.js
 
 ## Build Setup
 
