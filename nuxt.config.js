@@ -18,9 +18,9 @@ module.exports = {
   */
   css: [
     { src: 'bulma/css/bulma.css'},
-    '~assets/css/main.css'
 //     { src: 'bulma/sass/grid/columns.sass', lang: 'sass' },
-//     { src: 'bulma/sass/components/card.sass', lang: 'sass' }
+//     { src: 'bulma/sass/components/card.sass', lang: 'sass' },
+    '~assets/css/main.css'
   ],
   /*
   ** Add axios globally

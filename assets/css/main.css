@@ -10,6 +10,15 @@ footer
   border-top: 1px solid #ddd;
 }
 
+nav {
+	border-bottom: 1px solid #ddd;
+	padding-bottom: 1px;
+}
+
+a.navbar-item:hover, a.navbar-item.is-active, .navbar-link:hover, .navbar-link.is-active {
+    border-bottom: 1px solid #ddd;
+}
+
 a, a:hover, a:focus, a:visited
 {
   color: #000;

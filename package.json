@@ -17,8 +17,10 @@
     "bulma": "^0.4.3",
     "cross-env": "^5.0.0",
     "express": "^4.15.3",
+    "node-sass": "^4.5.3",
     "nuxt": "^1.0.0-alpha.3",
     "pg-promise": "^6.3.5",
+    "sass-loader": "^6.0.6",
     "source-map-support": "^0.4.15"
   },
   "devDependencies": {
