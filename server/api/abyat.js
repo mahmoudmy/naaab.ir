@@ -8,7 +8,7 @@ var router = Router()
 
 /* GET abyat listing. */
 router.get('/abyat', function(req, res, next) {
-  db.many('SELECT * from abyat LIMIT 20')
+  db.many('SELECT * from abyat ORDER BY id DESC LIMIT 20')
     .then(function(data) {
       res.json(data)
     })
