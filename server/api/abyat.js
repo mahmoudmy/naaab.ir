@@ -19,7 +19,7 @@ router.get('/abyat', function(req, res, next) {
 
 router.get('/abyat/page/:page', function(req, res, next) {
   var page = parseInt(req.params.page)
-  db.many('SELECT * from abyat LIMIT 20 OFFSET $1', page * 20)
+  db.many('SELECT * from abyat ORDER BY id DESC LIMIT 20 OFFSET $1', page * 20)
     .then(function(data) {
       res.json(data)
     })
