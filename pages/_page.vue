@@ -50,5 +50,10 @@ export default {
    -webkit-justify-content: center;
    justify-content: center;
 	} */
+	@media only screen and (max-width: 600px) {
+		.mesra{
+			font-size: 14px;
+		}
+	}
 	
 </style>

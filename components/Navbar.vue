@@ -4,11 +4,11 @@
       
       <div class="navbar-brand">
         <a class="navbar-item" href="/">ابیات ناب پارسی</a>
-        <div class="navbar-burger burger" data-target="navMenuExample">
+        <!--<div class="navbar-burger burger" data-target="navMenuExample">
           <span></span>
           <span></span>
           <span></span>
-        </div>
+        </div>-->
       </div>
     
       <div class="navbar-menu">
